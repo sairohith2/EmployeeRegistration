@@ -1,0 +1,42 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { DashboardComponent } from './app/dashboard/dashboard.component';
+import { LoginregisterComponent } from './app/loginregister/loginregister.component';
+import { RegisterformComponent } from './app/registerform/registerform.component';
+import { TabledataComponent } from './app/tabledata/tabledata.component';
+import { LayoutComponent } from './app/layout/layout.component';
+import { TimesheetsComponent } from './app/timesheets/timesheets.component';
+import { EmployeeDetailsComponent } from './app/employee-details/employee-details.component';
+
+
+// const routes: Routes = [
+//   { path: '', component: LoginregisterComponent },
+//   { path: 'login', component: LoginregisterComponent },
+//   { path: 'dashboard', component: DashboardComponent },
+//   { path: 'enroll', component: RegisterformComponent },
+//   { path: 'emplist', component: TabledataComponent },
+// ];
+
+const routes: Routes = [
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', component: LoginregisterComponent },
+
+  {
+    path: '',
+    component: LayoutComponent, 
+    children: [
+      {path: 'home', component: DashboardComponent},
+      { path: 'dashboard', component: DashboardComponent },
+      { path: 'enroll', component: RegisterformComponent },
+      { path: 'emplist', component: TabledataComponent },
+      { path: 'timesheet', component: TimesheetsComponent},
+      { path: 'employee/:id', component: EmployeeDetailsComponent }
+
+    ]
+  }
+];
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {}

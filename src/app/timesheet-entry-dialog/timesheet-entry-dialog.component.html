@@ -1,0 +1,87 @@
+<h2 mat-dialog-title>Enter Timesheet</h2>
+
+<mat-dialog-content>
+
+  <!-- Employee Name -->
+  <p><strong>Name:</strong> {{ data.employee.firstname }} {{ data.employee.lastname }}</p>
+
+  <!-- Date Range Picker -->
+  <div class="date-range">
+    <mat-form-field appearance="outline">
+      <mat-label>Start Date</mat-label>
+      <input matInput [matDatepicker]="startPicker" [(ngModel)]="startDate" (dateChange)="initTimesheet()" />
+      <mat-datepicker-toggle matSuffix [for]="startPicker"></mat-datepicker-toggle>
+      <mat-datepicker #startPicker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>End Date</mat-label>
+      <input matInput [matDatepicker]="endPicker" [(ngModel)]="endDate" (dateChange)="initTimesheet()" />
+      <mat-datepicker-toggle matSuffix [for]="endPicker"></mat-datepicker-toggle>
+      <mat-datepicker #endPicker></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+  <!-- Timesheet Table -->
+  <table mat-table [dataSource]="timesheetData" class="mat-elevation-z1 full-width-table">
+
+    <!-- Date Column -->
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef>Date</th>
+      <td mat-cell *matCellDef="let row">{{ row.date | date:'fullDate' }}</td>
+    </ng-container>
+
+    <!-- Time In -->
+    <ng-container matColumnDef="timeIn">
+      <th mat-header-cell *matHeaderCellDef>Time In</th>
+      <td mat-cell *matCellDef="let row">
+        <input type="time" [(ngModel)]="row.timeIn" (change)="calculate(row)" />
+      </td>
+    </ng-container>
+
+    <!-- Time Out -->
+    <ng-container matColumnDef="timeOut">
+      <th mat-header-cell *matHeaderCellDef>Time Out</th>
+      <td mat-cell *matCellDef="let row">
+        <input type="time" [(ngModel)]="row.timeOut" (change)="calculate(row)" />
+      </td>
+    </ng-container>
+
+    <!-- Break Time -->
+    <ng-container matColumnDef="break">
+      <th mat-header-cell *matHeaderCellDef>Break</th>
+      <td mat-cell *matCellDef="let row">
+        <input type="number" [(ngModel)]="row.breakHrs" (change)="calculate(row)" min="0" placeholder="Hrs" style="width: 50px;" />
+        <input type="number" [(ngModel)]="row.breakMins" (change)="calculate(row)" min="0" max="59" placeholder="Min" style="width: 50px;" />
+      </td>
+    </ng-container>
+
+    <!-- Total Hours -->
+    <ng-container matColumnDef="totalHours">
+      <th mat-header-cell *matHeaderCellDef>Total (hrs)</th>
+      <td mat-cell *matCellDef="let row">{{ row.totalHours }}</td>
+    </ng-container>
+
+    <!-- Header and Row -->
+    <tr mat-header-row *matHeaderRowDef="['date', 'timeIn', 'timeOut', 'break', 'totalHours']"></tr>
+    <tr mat-row *matRowDef="let row; columns: ['date', 'timeIn', 'timeOut', 'break', 'totalHours']"></tr>
+  </table>
+
+  <!-- Summary -->
+  <div class="summary">
+    <p><strong>Total Hours:</strong> {{ getTotalHours() }}</p>
+    <p>
+      <strong>Hourly Rate:</strong>
+      <input type="number" [(ngModel)]="hourlyRate" min="0" />
+    </p>
+    <p><strong>Estimated Pay:</strong> {{ getTotalHours() * hourlyRate | currency }}</p>
+  </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-flat-button color="primary" (click)="onSubmit()">Submit</button>
+</mat-dialog-actions>
+
+<button (click)="exportToCSV()" style="margin-bottom: 5px; font-weight: bold">Export to CSV</button>

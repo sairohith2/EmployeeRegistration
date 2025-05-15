@@ -1,0 +1,57 @@
+<mat-card class="auth-card">
+    <h2>{{ isLoginMode ? 'Login' : 'Register' }}</h2>
+  
+    <form [formGroup]="authForm" (ngSubmit)="onSubmit()">
+  
+      <!-- Email -->
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" type="email">
+        <mat-error *ngIf="authForm.get('email')?.hasError('required')">Email is required</mat-error>
+        <mat-error *ngIf="authForm.get('email')?.hasError('email')">Enter a valid email</mat-error>
+      </mat-form-field>
+  
+      <!-- Username (Register Only) -->
+      <mat-form-field appearance="fill" class="full-width" *ngIf="!isLoginMode">
+        <mat-label>Username</mat-label>
+        <input matInput formControlName="username">
+        <mat-error *ngIf="authForm.get('username')?.hasError('required')">
+          Username is required
+        </mat-error>
+      </mat-form-field>
+  
+      <!-- Password -->
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password" type="password">
+        <mat-error *ngIf="authForm.get('password')?.hasError('required')">Password is required</mat-error>
+      </mat-form-field>
+  
+      <!-- Confirm Password (Register Only) -->
+      <mat-form-field *ngIf="!isLoginMode" appearance="fill" class="full-width">
+        <mat-label>Confirm Password</mat-label>
+        <input matInput formControlName="confirmPassword" type="password">
+        <mat-error *ngIf="authForm.get('confirmPassword')?.hasError('required')">
+          Confirm Password is required
+        </mat-error>
+        <mat-error *ngIf="authForm.get('confirmPassword')?.dirty && authForm.get('confirmPassword')?.value !== authForm.get('password')?.value">
+          Passwords must match
+        </mat-error>
+      </mat-form-field>
+  
+      <!-- Submit Button -->
+      <button mat-raised-button color="primary" type="submit">
+        {{ isLoginMode ? 'Login' : 'Register' }}
+      </button>
+  
+      <!-- Switch Mode Button -->
+      <button mat-button color="accent" type="button" (click)="toggleMode()">
+        Switch to {{ isLoginMode ? 'Register' : 'Login' }}
+      </button>
+
+      <!-- <button mat-raised-button color="warn" type="button" (click)="debugClick()">Test Click</button> -->
+
+      
+    </form>
+  </mat-card>
+  

@@ -1,0 +1,739 @@
+{
+  "submissions": [
+    {
+      "id": "fb54",
+      "firstname": "Rohith Naga Venkata Satya Sai",
+      "lastname": "Pulaparthi",
+      "email": "Sairohith@gmial.com",
+      "username": "rohpul4488",
+      "dob": "2000-08-06",
+      "gender": "male",
+      "address": {
+        "street": "3256",
+        "country": "india",
+        "city": "Charlotte",
+        "region": "Sample",
+        "postal": 28269,
+        "phone": "7272778817"
+      },
+      "skills": "Angular, JavaScript, Java, Python",
+      "experience": [
+        {
+          "company": "Sample COmpany",
+          "position": "Software Developer",
+          "totalexp": 3,
+          "start": "2025-04-30",
+          "end": "2025-05-01"
+        },
+        {
+          "company": "Company 2",
+          "position": "Team Lead",
+          "totalexp": 5,
+          "start": "2025-03-23",
+          "end": "2025-04-28"
+        }
+      ],
+      "experience.company": "Sample COmpany",
+      "experience.totalexp": 3,
+      "status": "Active",
+      "role": "Manager",
+      "phone": "278178297",
+      "backgroundExp": "CIVIL",
+      "experienceYears": "9"
+    },
+    {
+      "id": "97fc",
+      "firstname": "Virat 18 12312",
+      "lastname": "Kohli ",
+      "email": "virat@example.com",
+      "username": "virkoh2025",
+      "dob": "2025-04-06",
+      "gender": "male",
+      "address": {
+        "street": "Viratstreet",
+        "country": "america",
+        "city": "Charlotte",
+        "region": "Test",
+        "postal": 28269,
+        "phone": "23412323121"
+      },
+      "skills": "Java, Angular",
+      "experience": [
+        {
+          "company": "Sample Company",
+          "position": "Junior Developer",
+          "totalexp": 3,
+          "start": "2025-04-28",
+          "end": "2025-05-05"
+        }
+      ],
+      "experience.company": "Sample Company",
+      "experience.totalexp": 3,
+      "status": "Inactive",
+      "role": "Employee",
+      "phone": "726282678",
+      "backgroundExp": "IT",
+      "experienceYears": "3"
+    },
+    {
+      "id": "0093",
+      "firstname": "bunny",
+      "lastname": "smith",
+      "email": "bunnysmith@gmail.com",
+      "username": "bunsmi2024",
+      "dob": "2024-02-06",
+      "gender": "male",
+      "address": {
+        "street": "sampletesting",
+        "country": "sample",
+        "city": "sample",
+        "region": null,
+        "postal": 32132,
+        "phone": "787929820"
+      },
+      "status": "Active",
+      "role": "Manager",
+      "phone": "73672827",
+      "backgroundExp": "IT",
+      "experienceYears": "8"
+    },
+    {
+      "id": "b479",
+      "firstname": "mahesh",
+      "lastname": "babu",
+      "email": "maheshbabu1@gmail.com",
+      "username": "mahbab2003",
+      "dob": "2003-09-08",
+      "gender": "male",
+      "address": {
+        "street": "testing street",
+        "phone": "1232312312",
+        "country": "india",
+        "city": "street",
+        "region": "sample",
+        "postal": 23412
+      },
+      "status": "Active",
+      "role": "Employee",
+      "backgroundExp": "Mechanical",
+      "experienceYears": "7"
+    },
+    {
+      "id": "2518",
+      "firstname": "Final ",
+      "lastname": "test",
+      "email": "finaltest@gmail.com",
+      "username": "fintes8222",
+      "dob": "8222-09-09",
+      "gender": "male",
+      "address": {
+        "street": "final",
+        "phone": "1231232312",
+        "country": "india",
+        "city": "india",
+        "region": "india",
+        "postal": 12345
+      },
+      "role": "Manager",
+      "status": "Inactive",
+      "backgroundExp": "ECE",
+      "experienceYears": "9"
+    },
+    {
+      "id": "ff10",
+      "firstname": "Sundeep",
+      "lastname": "Kalyan",
+      "email": "Sundeep@gmail.com",
+      "dob": "1999-07-28",
+      "username": "sunkal1999",
+      "gender": "male",
+      "dateOfJoining": "2000-08-06",
+      "experienceYears": 4,
+      "backgroundExp": "Other",
+      "otherBackground": "AI",
+      "address": {
+        "street": "Street",
+        "phone": "2341232312",
+        "country": "USA",
+        "city": "Kent",
+        "postal": 23412
+      },
+      "role": "Manager",
+      "status": "Inactive"
+    },
+    {
+      "id": "f6c6",
+      "firstname": "Sample",
+      "lastname": "Testing",
+      "email": "SampleTest@gmail.com",
+      "dob": "1998-05-03",
+      "username": "samtes1998",
+      "gender": "male",
+      "dateOfJoining": "2025-03-17",
+      "experienceYears": 3,
+      "backgroundExp": "Other",
+      "otherBackground": "DATA SCIENCE",
+      "address": {
+        "street": "Street",
+        "phone": "2341231223",
+        "country": "USA",
+        "city": "Kent",
+        "postal": 12323
+      },
+      "role": "Manager",
+      "status": "Active"
+    },
+    {
+      "id": "1a46",
+      "firstname": "John",
+      "lastname": "Smith",
+      "email": "Johnsmith@gmail.com",
+      "dob": "1998-07-08",
+      "username": "johsmi1998",
+      "gender": "male",
+      "dateOfJoining": "2008-12-08",
+      "experienceYears": 4,
+      "backgroundExp": "Other",
+      "otherBackground": "Data Science ",
+      "address": {
+        "street": "Main Road",
+        "phone": "2341232312",
+        "country": "USA",
+        "city": "Kent",
+        "postal": 22341
+      },
+      "status": "Inactive",
+      "role": "Employee"
+    },
+    {
+      "id": "3cbd",
+      "firstname": "Joy",
+      "lastname": "smith",
+      "email": "jotsmith@gmail.com",
+      "dob": "1998-09-07",
+      "username": "joysmi1998",
+      "gender": "male",
+      "dateOfJoining": "2023-07-20",
+      "experienceYears": 3,
+      "backgroundExp": "Other",
+      "otherBackground": "AI",
+      "address": {
+        "street": "Sample",
+        "phone": "1232312312",
+        "country": "USA",
+        "city": "USA",
+        "postal": 12323
+      },
+      "status": "Active",
+      "role": "Employee"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "testing@gmail.com",
+      "password": "testing",
+      "status": "active"
+    },
+    {
+      "id": "2",
+      "email": "testing1@gmail.com",
+      "password": "testing1",
+      "status": "inactive"
+    },
+    {
+      "id": "f650",
+      "email": "testing2@gmail.com",
+      "password": "testing2",
+      "status": "inactive"
+    },
+    {
+      "id": "15b3",
+      "email": "testing3@gmail.com",
+      "password": "testing3",
+      "username": "testing3",
+      "status": "active"
+    },
+    {
+      "id": "3862",
+      "email": "testing0@gmail.com",
+      "password": "zero",
+      "username": "testing0",
+      "status": "inactive"
+    },
+    {
+      "id": "d98c",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "username": "Admin",
+      "status": "inactive"
+    },
+    {
+      "id": "2cab",
+      "email": "admin1@gmail.com",
+      "password": "admin",
+      "username": "admin",
+      "status": "active"
+    },
+    {
+      "id": "ddf9",
+      "email": "admin2@gmail.com",
+      "password": "admin2",
+      "username": "admin2",
+      "status": "active"
+    }
+  ],
+  "timesheets": [
+    {
+      "employeeId": "fb54",
+      "hourlyRate": 10,
+      "entries": [
+        {
+          "date": "2025-05-01T04:00:00.000Z",
+          "timeIn": "10:00",
+          "timeOut": "22:00",
+          "breakHrs": 1,
+          "breakMins": 30,
+          "totalHours": 10.5
+        },
+        {
+          "date": "2025-05-02T04:00:00.000Z",
+          "timeIn": "10:00",
+          "timeOut": "13:00",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 3
+        },
+        {
+          "date": "2025-05-03T04:00:00.000Z",
+          "timeIn": "10:00",
+          "timeOut": "22:00",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 12
+        },
+        {
+          "date": "2025-05-04T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-05T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-06T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-07T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-08T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-09T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-10T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-11T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-12T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-13T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-14T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-15T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        }
+      ],
+      "id": "14f4"
+    },
+    {
+      "id": "3f3f",
+      "employeeId": "fb54",
+      "employeeName": "Rohith Naga Venkata Satya Sai Pulaparthi",
+      "period": {
+        "start": "2025-05-01T04:00:00.000Z",
+        "end": "2025-05-03T04:00:00.000Z"
+      },
+      "entries": [
+        {
+          "date": "2025-05-01T04:00:00.000Z",
+          "timeIn": "10:00",
+          "timeOut": "22:00",
+          "breakHours": 1,
+          "breakMinutes": 30,
+          "totalHours": 10.5
+        },
+        {
+          "date": "2025-05-02T04:00:00.000Z",
+          "timeIn": "10:00",
+          "timeOut": "22:00",
+          "breakHours": 1,
+          "breakMinutes": 30,
+          "totalHours": 10.5
+        },
+        {
+          "date": "2025-05-03T04:00:00.000Z",
+          "timeIn": "16:00",
+          "timeOut": "22:00",
+          "breakHours": 0,
+          "breakMinutes": 0,
+          "totalHours": 6
+        }
+      ],
+      "hourlyRate": 10,
+      "totalhours": 27
+    },
+    {
+      "employeeId": "97fc",
+      "hourlyRate": 10,
+      "entries": [
+        {
+          "date": "2025-05-01T04:00:00.000Z",
+          "timeIn": "10:00",
+          "timeOut": "22:00",
+          "breakHrs": 1,
+          "breakMins": 30,
+          "totalHours": 10.5
+        },
+        {
+          "date": "2025-05-02T04:00:00.000Z",
+          "timeIn": "10:00",
+          "timeOut": "22:00",
+          "breakHrs": 1,
+          "breakMins": 30,
+          "totalHours": 10.5
+        },
+        {
+          "date": "2025-05-03T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-04T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-05T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-06T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-07T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-08T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-09T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        }
+      ],
+      "id": "deb0"
+    },
+    {
+      "id": "0afb",
+      "employeeId": "d828",
+      "hourlyRate": 0,
+      "entries": [
+        {
+          "date": "2025-05-01T04:00:00.000Z",
+          "timeIn": "10:00",
+          "timeOut": "22:00",
+          "breakHrs": 1,
+          "breakMins": 30,
+          "totalHours": 10.5
+        },
+        {
+          "date": "2025-05-02T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-03T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-04T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-05T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-06T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-07T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-08T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-09T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        }
+      ]
+    },
+    {
+      "id": "0",
+      "employeeId": "fb54",
+      "startDate": "2025-05-01",
+      "endDate": "2025-05-15",
+      "hourlyRate": 10,
+      "entries": [
+        {
+          "date": "2025-05-01T04:00:00.000Z",
+          "timeIn": "10:00",
+          "timeOut": "22:00",
+          "breakHrs": 1,
+          "breakMins": 30,
+          "totalHours": 10.5
+        },
+        {
+          "date": "2025-05-02T04:00:00.000Z",
+          "timeIn": "10:00",
+          "timeOut": "22:00",
+          "breakHrs": 1,
+          "breakMins": 30,
+          "totalHours": 10.5
+        },
+        {
+          "date": "2025-05-03T04:00:00.000Z",
+          "timeIn": "16:00",
+          "timeOut": "22:00",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 6
+        },
+        {
+          "date": "2025-05-04T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-05T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-06T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-07T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-08T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-09T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-10T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-11T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-12T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-13T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-14T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        },
+        {
+          "date": "2025-05-15T04:00:00.000Z",
+          "timeIn": "",
+          "timeOut": "",
+          "breakHrs": 0,
+          "breakMins": 0,
+          "totalHours": 0
+        }
+      ]
+    }
+  ]
+}

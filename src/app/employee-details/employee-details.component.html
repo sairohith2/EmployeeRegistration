@@ -1,0 +1,29 @@
+<div class="employee-card">
+  <div class="dialog-header" >
+    <button class="close-button" (click)="closeDialog()">&#x2715;</button>
+  </div>
+  
+  <h2>Employee Profile</h2>
+  <div *ngIf="employee">
+    <p><strong>Name:</strong> {{ employee.firstname }} {{ employee.lastname }}</p>
+    <p><strong>Email:</strong> {{ employee.email }}</p>
+    <p><strong>Username:</strong> {{ employee.username }}</p>
+    <p><strong>DOB:</strong> {{ employee.dob }}</p>
+    <p><strong>Gender:</strong> {{ employee.gender }}</p>
+    <p><strong>Status:</strong>{{employee.status}}</p>
+    <p><strong>Role:</strong>{{employee.role}}</p>
+
+    <h3>Address</h3>
+    <ul>
+      <li><strong>Street:</strong> {{ employee.address?.street }}</li>
+      <li><strong>City:</strong> {{ employee.address?.city }}</li>
+      <li><strong>Country:</strong> {{ employee.address?.country }}</li>
+      <li><strong>Postal:</strong> {{ employee.address?.postal }}</li>
+    </ul>
+
+    <button *ngIf="!openedFromDialog" (click)="fillTimesheet()">Fill Timesheet</button>
+
+    <!-- <button (click)="fillTimesheet()">Fill Timesheet</button> -->
+  </div>
+  
+</div>

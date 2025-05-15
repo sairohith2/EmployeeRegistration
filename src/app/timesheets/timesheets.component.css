@@ -1,0 +1,48 @@
+.link-style {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .ag-theme-alpine {
+    --ag-header-background-color: #3949ab;
+    --ag-header-foreground-color: #ffffff;
+    --ag-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --ag-header-height: 48px;
+    --ag-row-height: 44px;
+    --ag-grid-size: 6px;
+    --ag-border-color: #ddd;
+    font-size: 14px;
+  }
+  
+  .ag-theme-alpine .ag-header-cell-label {
+    justify-content: center;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+  .ag-theme-alpine .ag-cell {
+    text-align: center;
+    padding: 8px;
+  }
+  
+  .ag-theme-alpine .ag-row:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .ag-theme-alpine .ag-row:hover {
+    background-color: #e8f0fe;
+  }
+  
+  .ag-theme-alpine .ag-root-wrapper {
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-top: 10px;
+  }
+  .page-heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    color:#3949ab
+  }
+  

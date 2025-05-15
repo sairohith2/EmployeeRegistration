@@ -1,0 +1,27 @@
+<div class="sidebar-header">
+  <img src="assets/avatar.png" alt="User Avatar" />
+  <span>{{ user?.username || 'User' }}</span>
+</div>
+
+<mat-nav-list>
+
+  <mat-list-item routerLink="/home" routerLinkActive="active">
+    <mat-icon>home</mat-icon>
+    <span>Home</span>
+  </mat-list-item>
+
+  <mat-list-item routerLink="/enroll" routerLinkActive="active">
+    <mat-icon>person_add</mat-icon>
+    <span>Emp Enroll</span>
+  </mat-list-item>
+
+  <mat-list-item routerLink="/timesheet" routerLinkActive="active">
+    <mat-icon>schedule</mat-icon>
+    <span>Emp Time Sheets</span>
+  </mat-list-item>
+
+  <mat-list-item routerLink="/emplist" routerLinkActive="active">
+    <mat-icon>cloud</mat-icon>
+    <span>Employees List</span>
+  </mat-list-item>
+</mat-nav-list>

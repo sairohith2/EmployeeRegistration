@@ -1,0 +1,62 @@
+<!-- <mat-toolbar color="primary">
+    <span>Welcome to the Dashboard</span>
+    <span class="spacer"></span>
+  
+    <button mat-button [matMenuTriggerFor]="menu">
+        👤  {{ user?.username }}
+      <mat-icon>arrow_drop_down</mat-icon>
+    </button>
+  
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="logout()">
+        <mat-icon>logout</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar>
+  
+  <div style="padding: 20px;">
+    <h2>Hello, {{ user?.username || 'User' }}!</h2>
+    <p>This is your dashboard.</p>
+  </div>
+
+   -->
+
+
+<div style="flex: 1; padding: 20px;">
+  <mat-toolbar color="primary">
+    <span>Welcome to the Dashboard</span>
+    <span class="spacer"></span>
+    <button mat-button [matMenuTriggerFor]="menu">
+      <mat-icon>account_circle</mat-icon>
+      {{ user?.username }}
+      <mat-icon>arrow_drop_down</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="logout()">
+        <mat-icon>logout</mat-icon>
+        Logout
+      </button>
+    </mat-menu>
+  </mat-toolbar>
+
+  <h1>Hello, {{ user?.username }}!</h1>
+  <!-- <p>This is your dashboard.</p> -->
+  <h2 class="dashboard-title">Dashboard Overview</h2>
+
+  <div class="card-grid">
+    <div class="card">Total Employees: {{ total }}</div>
+    <div class="card">Active: {{ active }} | Inactive: {{ inactive }}</div>
+    <div class="card">Managers: {{ managers }} | Employees: {{ employeesCount }}</div>
+  </div>
+
+
+
+<h3>Search Employee</h3>
+<div class="search-box">
+  <input type="text" [(ngModel)]="searchValue" placeholder="Search ...." />
+  <button (click)="onSearch()">Search</button>
+</div>
+
+
+</div>
