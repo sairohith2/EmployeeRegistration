@@ -5,6 +5,8 @@ import { FormGroupDirective } from '@angular/forms';
 import { FormGroupName } from '@angular/forms';
 import { FormService } from '../form.service';
 import { Router } from '@angular/router';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import pdf from 'pdf-parse';
 
 @Component({
   selector: 'app-registerform',
@@ -15,8 +17,10 @@ export class RegisterformComponent implements OnInit{
   title = 'angular-reactive-form';
   showOtherBackground = false;
 
+  previewUrl: SafeResourceUrl | null = null;
   reactiveForm: FormGroup;
-  constructor(private fb: FormBuilder, private formService: FormService, private router: Router
+  constructor(private fb: FormBuilder, private formService: FormService, private router: Router,
+    private sanitizer: DomSanitizer
   ) {}
   ngOnInit() {
     this.reactiveForm = new FormGroup({
@@ -78,7 +82,33 @@ export class RegisterformComponent implements OnInit{
   onBackgroundChange(event: any) {
     this.showOtherBackground = event.target.value === 'Other';
   }
-  
+
+  onFileUpload(event: any): void {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    const fileType = file.type;
+    console.log('File Type:', fileType);
+    console.log('File:', file);   
+    const url = URL.createObjectURL(file);
+    console.log('File URL:', url);
+
+    if (fileType === 'application/pdf') {
+      this.previewUrl = this.sanitizer.bypassSecurityTrustResourceUrl(url);
+    } else {
+      alert('Please upload a PDF file.');
+      this.onReset();
+    }
+  }
+
+  onReset(): void {
+    const fileInput = document.querySelector('input[type="file"]') as HTMLInputElement;
+    if(fileInput)  {
+      fileInput.value = '';
+      this.previewUrl = null;
+    }
+  }
+
   OnSubmit(){
     if(this.reactiveForm.valid){
       const formData = this.reactiveForm.value;

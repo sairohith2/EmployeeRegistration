@@ -4,6 +4,7 @@ import { FormService } from '../form.service';
 import { TimesheetEntryDialogComponent } from '../timesheet-entry-dialog/timesheet-entry-dialog.component';
 import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { GridApi } from 'ag-grid-community';
+import { EmployeeFileUploadDialogComponent } from '../employee-file-upload-dialog/employee-file-upload-dialog.component';
 
 @Component({
   selector: 'app-employee-details',
@@ -14,7 +15,7 @@ export class EmployeeDetailsComponent implements OnInit {
 
   //employee: any;
   employeeId: any;
-  @Input() employee:any;
+  employee:any;
   openedFromDialog: boolean = false;
   
 
@@ -22,8 +23,7 @@ export class EmployeeDetailsComponent implements OnInit {
     private formService: FormService,
     private dialog: MatDialog,
     @Optional() @Inject(MAT_DIALOG_DATA) public data: any,
-    @Optional() public dialogRef?: MatDialogRef<EmployeeDetailsComponent>
-
+    @Optional() public dialogRef?: MatDialogRef<EmployeeDetailsComponent>,
   ) {
     if (data && data.employee) {
       this.employee = data.employee;
@@ -39,8 +39,8 @@ export class EmployeeDetailsComponent implements OnInit {
     // }
     // );
     if (!this.employee) {
-      this.employeeId = this.route.snapshot.paramMap.get('id');
-      if (this.employeeId) {
+      this.employeeId = this.route.snapshot.paramMap.get('id'); // pulls the value  from the URL
+      if (this.employeeId) { //if employee id is found 
         this.formService.getEmployeeById(this.employeeId).subscribe((data: any) => {
           this.employee = data;
           console.log("Employee Details", this.employee);
@@ -65,13 +65,20 @@ export class EmployeeDetailsComponent implements OnInit {
   }
 
   closeDialog() {
-    if (this.openedFromDialog) {
-      this.dialogRef?.close(this.employee);
-    }
-    else {
-      this.dialogRef?.close();
+    if (this.openedFromDialog && this.dialogRef) {
+      this.dialogRef.close();
+    } else {
+      window.history.back();
     }
   }
 
+
+  documentsUpload(){
+    this.dialog.open( EmployeeFileUploadDialogComponent,{
+      width: '800px',
+      height: '600px',
+      data: { employee: this.employee }
+    })
+  }
 
 }

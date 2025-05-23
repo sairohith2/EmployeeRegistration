@@ -33,7 +33,7 @@ export class TimesheetEntryDialogComponent implements OnInit {
 
   loadTimesheet() {
     this.formService.getTimesheet(this.data.employee.id).subscribe((res) => {
-      if (res.length > 0) {
+      if (res.length > 0) { // checks if emplloyee has a timesheet
         this.timesheetId = res[0].id;
         this.timesheetData = res[0].entries;
         this.hourlyRate = res[0].hourlyRate;
@@ -46,7 +46,7 @@ export class TimesheetEntryDialogComponent implements OnInit {
   initTimesheet() {
     const dates: any[] = [];
     const current = new Date(this.startDate);
-    while (current <= this.endDate) {
+    while (current <= this.endDate) { //loop runs from start date to end date and  stops once the end date is reached
       dates.push({
         date: new Date(current),
         timeIn: '',
@@ -62,11 +62,11 @@ export class TimesheetEntryDialogComponent implements OnInit {
 
   calculate(row: any) {
     if (row.timeIn && row.timeOut) {
-      const start = new Date(`2000-01-01T${row.timeIn}`);
+      const start = new Date(`2000-01-01T${row.timeIn}`); // converts the time to date format
       const end = new Date(`2000-01-01T${row.timeOut}`);
-      const breakTime = (row.breakHrs || 0) + (row.breakMins || 0) / 60;
-      const worked = (end.getTime() - start.getTime()) / (1000 * 60 * 60);
-      row.totalHours = Math.max(0, worked - breakTime);
+      const breakTime = (row.breakHrs || 0) + (row.breakMins || 0) / 60; // converts break time to hours
+      const worked = (end.getTime() - start.getTime()) / (1000 * 60 * 60); // calculates the worked hours
+      row.totalHours = Math.max(0, worked - breakTime);  // calculates the total hours wokrked and subtracts the break time
     }
   }
 

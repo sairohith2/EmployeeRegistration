@@ -37,11 +37,7 @@ export class LoginregisterComponent {
   
 
 onSubmit() {
-  // First: validate the form before doing anything
-  // if (this.authForm.invalid) {
-  //   console.warn(' Form is invalid');
-  //   return;
-  // }
+
 
   // Retrieve values
   const email = this.authForm.get('email')?.value?.trim();
@@ -86,7 +82,7 @@ onSubmit() {
             next: () => {
               alert(' Registration successful');
               this.authForm.reset();
-              this.toggleMode(); // Switch to login mode
+              this.toggleMode(); 
             },
             error: (err) => {
               console.error(' Registration API error:', err);

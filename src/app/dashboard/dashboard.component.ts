@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormService } from '../form.service';
-import { ChartConfiguration } from 'chart.js';
 import { GridApi } from 'ag-grid-community';
 import { EmployeeDetailsComponent } from '../employee-details/employee-details.component';
 import { MatDialog } from '@angular/material/dialog';
@@ -54,7 +53,7 @@ export class DashboardComponent {
     this.managers = this.employees.filter(e => e.role === 'Manager').length;
     this.employeesCount = this.employees.filter(e => e.role === 'Employee').length;
   }
-
+  
   onSearch() {
     const search = this.searchValue.trim().toLowerCase();
     if (!search) return;
@@ -67,8 +66,10 @@ export class DashboardComponent {
   
     if (this.matchedEmployee) {
       this.openDialog(this.matchedEmployee);
+      this.onReset();
     } else {
       alert('No employee found.');
+      this.onReset();
     }
   }
   
@@ -82,10 +83,7 @@ export class DashboardComponent {
 
   onReset() {
     this.searchValue = '';
-    this.matchedEmployee = null;
-    this.showPopup = false;
   }
-
 
   logout() {
     localStorage.removeItem('user');

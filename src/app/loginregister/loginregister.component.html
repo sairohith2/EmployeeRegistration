@@ -11,7 +11,7 @@
         <mat-error *ngIf="authForm.get('email')?.hasError('email')">Enter a valid email</mat-error>
       </mat-form-field>
   
-      <!-- Username (Register Only) -->
+      <!-- Username for purpose register only -->
       <mat-form-field appearance="fill" class="full-width" *ngIf="!isLoginMode">
         <mat-label>Username</mat-label>
         <input matInput formControlName="username">
@@ -49,9 +49,6 @@
         Switch to {{ isLoginMode ? 'Register' : 'Login' }}
       </button>
 
-      <!-- <button mat-raised-button color="warn" type="button" (click)="debugClick()">Test Click</button> -->
-
-      
     </form>
   </mat-card>
   

@@ -1,12 +1,37 @@
-<h2 class="page-heading">Employees List</h2>
+<div class="position-relative">
 
 
-<div class="row">
-    <div class="col-12">
-        <ag-grid-angular class="ag-theme-alpine" style="width: 100%; height: 500px;"[rowData]="empData"
-            [columnDefs]="columnDefs" [defaultColDef]="defaultColDef" (gridReady)="onGridReady($event)"
-            rowSelection="single" [animateRows]="true" [gridOptions]="gridOptions" [pagination]="true"
-            [paginationPageSize]="paginationPageSize" [paginationPageSizeSelector]="paginationPageSizeSelector"
-             />
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <h2 class="page-heading">Employees List</h2>
+        <button class="btn btn-light" (click)="toggleHolidayPopup()" title="View Calendar & Holidays"> 
+            <i class="fas fa-calendar-alt">Calendar</i>
+        </button>
     </div>
+
+    
+    <div class="row">
+        <div class="col-12">
+            <ag-grid-angular class="ag-theme-alpine" style="width: 100%; height: 500px;" [rowData]="empData"
+                [columnDefs]="columnDefs" [defaultColDef]="defaultColDef" (gridReady)="onGridReady($event)"
+                rowSelection="single" [animateRows]="true" [gridOptions]="gridOptions" [pagination]="true"
+                [paginationPageSize]="paginationPageSize"
+                [paginationPageSizeSelector]="paginationPageSizeSelector"></ag-grid-angular>
+        </div>
+    </div>
+
+   
+    <div *ngIf="showHolidayPopup" class="popup-container">
+        <div class="popup-content">
+            <button class="close-btn" (click)="toggleHolidayPopup()">×</button>
+            <h4> Upcoming Holidays</h4>
+    
+            <!-- comming holidays code -->
+            <ul class="holiday-list mt-3">
+                <li *ngFor="let holiday of upcomingHolidays">
+                    {{ holiday.date | date: 'mediumDate' }} - {{ holiday.name }}
+                </li>
+            </ul>
+        </div>
+    </div>
+
 </div>

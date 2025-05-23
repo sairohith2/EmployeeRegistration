@@ -25,19 +25,19 @@ export class TabledataComponent {
 
   @ViewChild('csvInput') csvInput!: ElementRef;
   
-  private gridApi!: GridApi<any>;
-  formData: any[] = [];
-  defaultColDef = {
+  private gridApi!: GridApi<any>; // gridApi is used to access the grid API methods like filtering, sorting, etc.
+  formData: any[] = []; // formData is used to store the data fetched from the server
+  defaultColDef = { // defaultColDef is used to set the default properties for all columns
     flex: 1,
     minWidth: 100,
     filter: true,
     editable: true,
     menuTabs: [],
   }
-  paginationPageSize = 10;
-  paginationPageSizeSelector: number[] | boolean = [10, 20, 30, 50];
+  paginationPageSize = 10; // paginationPageSize is used to set the number of rows per page
+  paginationPageSizeSelector: number[] | boolean = [10, 20, 30, 50]; // paginationPageSizeSelector is used to set the options for rows per page
 
-  columnDefs = [
+  columnDefs = [ // columnDefs is used to define the columns of the grid
     { field: 'firstname', headerName: 'First Name', sortable: true, filter: true },
     { field: 'lastname', headerName: 'Last Name', sortable: true, filter: true },
     { field: 'email', headerName: 'Email', sortable: true, filter: true },
@@ -52,11 +52,11 @@ export class TabledataComponent {
       sortable: true,
       filter: true,
       editable: true,
-      cellEditor: 'agSelectCellEditor',
-      cellEditorParams: {
+      cellEditor: 'agSelectCellEditor', // cellEditor is used to set the editor for the cell
+      cellEditorParams: { // cellEditorParams is used to set the parameters for the cell editor
         values: ['IT', 'ECE', 'CIVIL', 'Mechanical', 'Other']
       },
-      cellRenderer: (params: any) => {
+      cellRenderer: (params: any) => { // cellRenderer is used to set the renderer for the cell
         const backgroundExp = params.value || '';
         const otherBackground = params.data?.otherBackground || '';
         return backgroundExp === 'Other' ? otherBackground : backgroundExp;
@@ -80,7 +80,13 @@ export class TabledataComponent {
       cellEditorParams: {
         values: ['Active', 'Inactive'],
       },
-      cellRenderer: (params: any) => {
+      cellRenderer: (params: any) => { // A function customizes the display of the status cell
+        // params.value is the value of the cell
+        // params.data is the entire row data
+        // params.colDef is the column definition
+        // params.api is the grid API
+        // params.node is the row node
+        // params.context is the context of the grid
         const status = (params.value || '').toLowerCase();
         let color = '#f44336';
         if (status === 'active') color = '#4caf50';
@@ -141,7 +147,6 @@ export class TabledataComponent {
     suppressCellFocus: true,
   }
 
-
   onGridReady(event: GridReadyEvent<any>) {
     this.gridApi = event.api;
     console.log('Grid API initialized:', this.gridApi); // Debugging log
@@ -161,6 +166,7 @@ export class TabledataComponent {
       this.showRemoveMessage = false;
     }
       , 4000);
+      
   }
 
   saveDetails() {
@@ -191,23 +197,25 @@ export class TabledataComponent {
   }
 
   onStatusFilterChange() {
+    const currentModel = this.gridApi.getFilterModel() //current state of column filters
     this.gridApi.setFilterModel({
+        ...currentModel,
       status: this.selectedStatus ? {
         type: 'equals',
         filter: this.selectedStatus
-      } : null
+      } : undefined
     });
-    this.gridApi.onFilterChanged();
   }
 
   onRoleFilterChange(){
+    const currentModel = this.gridApi.getFilterModel();
     this.gridApi.setFilterModel({
+        ...currentModel, //speard operator to keep all exisiting filters
       role: this.selectedRole ? {
         type: 'equals',
         filter: this.selectedRole
-      } : null
+      } : undefined
     });
-    this.gridApi.onFilterChanged();
   }
 
   onSearchTextChange() {
@@ -227,7 +235,6 @@ export class TabledataComponent {
     })
   }
   
-
   onFileUpload(event: any): void {
     const file: File = event.target.files[0];
     if (file) {
@@ -264,7 +271,7 @@ export class TabledataComponent {
         dob: employee.Dob,
         phone: employee.Phone
       };
-  
+      
       return this.formService.bulkAddEmployees(employeeData);
     });
   

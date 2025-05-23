@@ -20,6 +20,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatTableModule } from '@angular/material/table';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from 'src/app-routing.module';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -30,6 +31,11 @@ import { TimesheetEntryDialogComponent } from './timesheet-entry-dialog/timeshee
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { NgChartsModule } from 'ng2-charts';
+import { DocumentsUploadComponent } from './documents-upload/documents-upload.component';
+import { EmployeeFileUploadDialogComponent } from './employee-file-upload-dialog/employee-file-upload-dialog.component';
+import { AssetComponent } from './asset/asset.component';
+import { AssetformdialogComponent } from './assetformdialog/assetformdialog.component';
+import { ReturnedAssetComponent } from './returned-asset/returned-asset.component';
 
 
 
@@ -45,6 +51,11 @@ import { NgChartsModule } from 'ng2-charts';
     TimesheetsComponent,
     EmployeeDetailsComponent,
     TimesheetEntryDialogComponent,
+    DocumentsUploadComponent,
+    EmployeeFileUploadDialogComponent,
+    AssetComponent,
+    AssetformdialogComponent,
+    ReturnedAssetComponent,
   ],
   imports: [
     BrowserModule,
@@ -68,6 +79,7 @@ import { NgChartsModule } from 'ng2-charts';
     MatNativeDateModule,
     MatTableModule,
     NgChartsModule,
+    MatAutocompleteModule
   ],
   providers: [],
   bootstrap: [AppComponent]

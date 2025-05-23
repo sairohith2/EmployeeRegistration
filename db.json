@@ -128,7 +128,7 @@
       "gender": "male",
       "address": {
         "street": "final",
-        "phone": "1231232312",
+        "phone": "323897857",
         "country": "india",
         "city": "india",
         "region": "india",
@@ -162,28 +162,6 @@
       "status": "Inactive"
     },
     {
-      "id": "f6c6",
-      "firstname": "Sample",
-      "lastname": "Testing",
-      "email": "SampleTest@gmail.com",
-      "dob": "1998-05-03",
-      "username": "samtes1998",
-      "gender": "male",
-      "dateOfJoining": "2025-03-17",
-      "experienceYears": 3,
-      "backgroundExp": "Other",
-      "otherBackground": "DATA SCIENCE",
-      "address": {
-        "street": "Street",
-        "phone": "2341231223",
-        "country": "USA",
-        "city": "Kent",
-        "postal": 12323
-      },
-      "role": "Manager",
-      "status": "Active"
-    },
-    {
       "id": "1a46",
       "firstname": "John",
       "lastname": "Smith",
@@ -197,7 +175,7 @@
       "otherBackground": "Data Science ",
       "address": {
         "street": "Main Road",
-        "phone": "2341232312",
+        "phone": "2341232311",
         "country": "USA",
         "city": "Kent",
         "postal": 22341
@@ -223,6 +201,28 @@
         "country": "USA",
         "city": "USA",
         "postal": 12323
+      },
+      "status": "Active",
+      "role": "Employee"
+    },
+    {
+      "id": "5de3",
+      "firstname": "Tharun ",
+      "lastname": "Nayak",
+      "email": "tharun@gmail.com",
+      "dob": "2001-08-09",
+      "username": "thanay2001",
+      "gender": "male",
+      "dateOfJoining": "2005-09-09",
+      "experienceYears": 4,
+      "backgroundExp": "Other",
+      "otherBackground": "AI",
+      "address": {
+        "street": "Sample",
+        "phone": "2341232312",
+        "country": "Canada",
+        "city": "Can",
+        "postal": 23123
       },
       "status": "Active",
       "role": "Employee"
@@ -734,6 +734,260 @@
           "totalHours": 0
         }
       ]
+    }
+  ],
+  "filesUploaded": [
+    {
+      "id": "eb8d",
+      "fileName": "Resume.pdf",
+      "type": "application/pdf",
+      "employeeId": "fb54",
+      "employeeName": "Rohith Naga Venkata Satya Sai"
+    },
+    {
+      "id": "7cd4",
+      "fileName": "Resume.pdf",
+      "type": "application/pdf",
+      "employeeId": "97fc",
+      "employeeName": "Virat 18 12312"
+    },
+    {
+      "id": "c289",
+      "fileName": "Catalogue - Hidani Tech .pdf",
+      "type": "application/pdf",
+      "employeeId": "97fc",
+      "employeeName": "Virat 18 12312"
+    },
+    {
+      "id": "7be0",
+      "fileName": "Catalogue - Hidani Tech .pdf",
+      "type": "application/pdf",
+      "employeeId": "97fc",
+      "employeeName": "Virat 18 12312"
+    },
+    {
+      "id": "c716",
+      "fileName": "Resume.pdf",
+      "type": "application/pdf",
+      "employeeId": "97fc",
+      "employeeName": "Virat 18 12312"
+    },
+    {
+      "id": "9ba7",
+      "fileName": "Catalogue - Hidani Tech .pdf",
+      "type": "application/pdf",
+      "employeeId": "97fc",
+      "employeeName": "Virat 18 12312"
+    },
+    {
+      "id": "659f",
+      "fileName": "Resume.pdf",
+      "type": "application/pdf",
+      "employeeId": "0093",
+      "employeeName": "bunny"
+    },
+    {
+      "id": "4028",
+      "fileName": "Stem OPT.pdf",
+      "type": "application/pdf",
+      "employeeId": "97fc",
+      "employeeName": "Virat 18 12312"
+    },
+    {
+      "id": "f9a9",
+      "fileName": "April_2025.PNG",
+      "type": "image/png",
+      "employeeId": "0093",
+      "employeeName": "bunny"
+    },
+    {
+      "id": "4e91",
+      "fileName": "Angular_Route_Guards_CheatSheet.pdf",
+      "type": "application/pdf",
+      "employeeId": "0093",
+      "employeeName": "bunny"
+    },
+    {
+      "id": "1fe8",
+      "fileName": "Resume.pdf",
+      "type": "application/pdf",
+      "employeeId": "fb54",
+      "employeeName": "Rohith Naga Venkata Satya Sai"
+    },
+    {
+      "id": "799c",
+      "fileName": "ChatGPT Image May 9, 2025, 11_11_14 AM.png",
+      "type": "image/png",
+      "employeeId": "fb54",
+      "employeeName": "Rohith Naga Venkata Satya Sai"
+    },
+    {
+      "id": "5c46",
+      "fileName": "timesheet modal.png",
+      "type": "image/png",
+      "employeeId": "1a46",
+      "employeeName": "John"
+    },
+    {
+      "id": "07c7",
+      "fileName": "ChatGPT Image May 9, 2025, 11_11_14 AM.png",
+      "type": "image/png",
+      "employeeId": "fb54",
+      "employeeName": "Rohith Naga Venkata Satya Sai"
+    },
+    {
+      "id": "4d10",
+      "fileName": "Angular lifecyclehooks.png",
+      "type": "image/png",
+      "employeeId": "fb54",
+      "employeeName": "Rohith Naga Venkata Satya Sai"
+    },
+    {
+      "id": "3d12",
+      "fileName": "Feb_2025.PNG",
+      "type": "image/png",
+      "employeeId": "fb54",
+      "employeeName": "Rohith Naga Venkata Satya Sai"
+    },
+    {
+      "id": "22c6",
+      "fileName": "timesheet modal.png",
+      "type": "image/png",
+      "employeeId": "1a46",
+      "employeeName": "John"
+    },
+    {
+      "id": "08bf",
+      "fileName": "avatar.png",
+      "type": "image/png",
+      "employeeId": "1a46",
+      "employeeName": "John"
+    },
+    {
+      "id": "966c",
+      "fileName": "ChatGPT Image May 9, 2025, 11_11_14 AM.png",
+      "type": "image/png",
+      "employeeId": "5de3",
+      "employeeName": "Tharun "
+    },
+    {
+      "id": "070e",
+      "fileName": "April_2025.PNG",
+      "type": "image/png",
+      "employeeId": "5de3",
+      "employeeName": "Tharun "
+    }
+  ],
+  "assetEmps": [
+    {
+      "id": "1098",
+      "assetName": "Dell",
+      "assetType": "Monitor",
+      "serialNumber": "782#97828h",
+      "employee": "bunny smith",
+      "issuedDate": "2000-09-08",
+      "returned": "NO"
+    },
+    {
+      "id": "0ef2",
+      "assetName": "Samsung s23",
+      "assetType": "Office Phone",
+      "serialNumber": "3290#78YG45",
+      "employee": "Final  test",
+      "issuedDate": "2025-09-03",
+      "returned": "NO"
+    },
+    {
+      "id": "cae6",
+      "assetName": "Laptop Acer",
+      "assetType": "Laptop",
+      "serialNumber": "WED23KO78",
+      "employee": "Virat 18 12312 Kohli ",
+      "issuedDate": "2024-03-03",
+      "returned": "NO"
+    },
+    {
+      "id": "5381",
+      "assetName": "Monitor HP",
+      "assetType": "Monitor",
+      "serialNumber": "234#EDR12",
+      "employee": "Rohith Naga Venkata Satya Sai Pulaparthi",
+      "issuedDate": "2025-02-03",
+      "returned": "No"
+    },
+    {
+      "id": "4a97",
+      "assetName": "Laptop Ascer",
+      "assetType": "Laptop",
+      "serialNumber": "309102DEML",
+      "employee": "Virat 18 12312 Kohli ",
+      "issuedDate": "2023-03-02",
+      "returned": "No"
+    },
+    {
+      "id": "fe7a",
+      "assetName": "Mouse",
+      "assetType": "Keyboard & Mouse",
+      "serialNumber": "490",
+      "employee": "Tharun  Nayak",
+      "issuedDate": "2025-03-04",
+      "returned": "No"
+    },
+    {
+      "id": "3c2f",
+      "assetName": "keyboard",
+      "assetType": "Access Card",
+      "serialNumber": "32",
+      "employee": "Sundeep Kalyan",
+      "issuedDate": "2025-03-02",
+      "returned": "No"
+    },
+    {
+      "id": "8ddb",
+      "assetName": "Monitor",
+      "assetType": "Monitor",
+      "serialNumber": "23EDL90H4",
+      "employee": "mahesh babu",
+      "issuedDate": "2025-02-03",
+      "returned": "No"
+    },
+    {
+      "id": "0c0f",
+      "assetName": "Access Card",
+      "assetType": "Access Card",
+      "serialNumber": "3290",
+      "employee": "mahesh babu",
+      "issuedDate": "2025-05-04",
+      "returned": "No"
+    },
+    {
+      "id": "259b",
+      "assetName": "Laptop",
+      "assetType": "Laptop",
+      "serialNumber": "230000JKOP",
+      "employee": "Joy smith",
+      "issuedDate": "2025-03-04",
+      "returned": "No"
+    },
+    {
+      "id": "972d",
+      "assetName": "Access Card",
+      "assetType": "Access Card",
+      "serialNumber": "390234EWOW90",
+      "employee": "bunny smith",
+      "issuedDate": "2025-03-02"
+    }
+  ],
+  "returnedAssets": [
+    {
+      "id": "4cbe",
+      "assetName": "Access Card",
+      "assetType": "Access Card",
+      "serialNumber": "30",
+      "employee": "mahesh babu",
+      "issuedDate": "2025-03-01",
+      "returned": "Yes",
+      "returnedDate": "2025-02-03"
     }
   ]
 }

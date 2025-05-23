@@ -1,0 +1,17 @@
+<h2>Upload Files for : {{ data.employee.firstname }} {{ data.employee.lastname }}</h2>
+
+<div class="dialog-header" >
+    <button class="close-button" (click)="closeDialog()">&#x2715;</button>
+</div>
+
+<input type="file" multiple (change)="onFileSelected($event)" />
+<div *ngIf="uploadedFiles.length > 0">
+  <h4>Uploaded Files:</h4>
+  <ul>
+    <li *ngFor="let file of uploadedFiles">{{ file.name }}</li>
+  </ul>
+</div>
+
+<div class="button-group">
+    <button (click)="saveDetails()">Save</button>
+</div>

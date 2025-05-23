@@ -1,0 +1,50 @@
+<h2 mat-dialog-title>Assign Asset</h2>
+<mat-dialog-content>
+<mat-form-field appearance="fill" class="full-width">
+  <mat-label>Search</mat-label>
+  <input
+    matInput
+    type="text"
+    [(ngModel)]="form.employee"
+    placeholder="Assign To (Employee)...."
+  />
+</mat-form-field>
+<button mat-raised-button color="primary" (click)="onSearch()">Search</button>
+
+<div *ngIf="employeeNotFound" class="error-message">
+  <mat-icon color="warn" style="vertical-align: middle;">error</mat-icon>
+  Employee not found.
+</div>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Asset Name</mat-label>
+    <input matInput [(ngModel)]="form.assetName" />
+  </mat-form-field>
+
+ <mat-form-field appearance="fill" class="full-width">
+  <mat-label>Asset Type</mat-label>
+  <mat-select [(ngModel)]="form.assetType" name="assetType">
+    <mat-option value="Laptop">Laptop</mat-option>
+    <mat-option value="Access Card">Access Card</mat-option>
+    <mat-option value="Monitor">Monitor</mat-option>
+    <mat-option value="Office Phone">Office Phone</mat-option>
+    <mat-option value="Keyboard & Mouse">Keyboard & Mouse</mat-option>
+  </mat-select>
+</mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Serial Number</mat-label>
+    <input matInput [(ngModel)]="form.serialNumber" />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="full-width">
+    <mat-label>Issued Date</mat-label>
+    <input matInput type="date" [(ngModel)]="form.issuedDate" />
+  </mat-form-field>
+
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="cancel()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="submitForm()">Submit</button>
+</mat-dialog-actions>

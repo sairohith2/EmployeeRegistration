@@ -1,0 +1,43 @@
+
+<div class="asset-preview-card" *ngIf="employee">
+ <h3>Returning Asset List</h3>
+ <table class="preview-table">
+    <thead>
+    <tr>
+        <th>Select</th>
+        <th>Employee Name</th>
+        <th>Asset Name</th>
+        <th>Asset Type</th>
+        <th>Serial Number</th>
+        <th>Issued Data</th>
+    </tr>
+    </thead>
+    <tbody>
+        <td>
+          <input type="checkbox" [(ngModel)]="employee.isSelected" />
+        </td>
+        <td>{{employee.employee}}</td>
+        <td>{{employee.assetName}}</td>
+        <td>{{employee.assetType}}</td>
+        <td>{{employee.serialNumber}}</td>
+        <td>{{employee.issuedDate}}</td>
+    </tbody>
+ </table>
+  
+</div>
+
+<mat-form-field appearance="fill" class="full-width" style="padding-top: 55px; padding-bottom: 55px;width:25%;">
+  <mat-label>Returned Date</mat-label>
+  <input
+    matInput
+    type="date"
+    [(ngModel)]="employee.returnedDate"
+    required
+  />
+</mat-form-field>
+
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="cancel()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="submitForm()">Submit</button>
+</mat-dialog-actions>

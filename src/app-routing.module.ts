@@ -7,6 +7,8 @@ import { TabledataComponent } from './app/tabledata/tabledata.component';
 import { LayoutComponent } from './app/layout/layout.component';
 import { TimesheetsComponent } from './app/timesheets/timesheets.component';
 import { EmployeeDetailsComponent } from './app/employee-details/employee-details.component';
+import { DocumentsUploadComponent } from './app/documents-upload/documents-upload.component';
+import { AssetComponent } from './app/asset/asset.component';
 
 
 // const routes: Routes = [
@@ -30,8 +32,9 @@ const routes: Routes = [
       { path: 'enroll', component: RegisterformComponent },
       { path: 'emplist', component: TabledataComponent },
       { path: 'timesheet', component: TimesheetsComponent},
-      { path: 'employee/:id', component: EmployeeDetailsComponent }
-
+      { path: 'employee/:id', component: EmployeeDetailsComponent },
+      { path: 'documentsupload', component: DocumentsUploadComponent },
+      { path: 'asset', component:  AssetComponent}
     ]
   }
 ];

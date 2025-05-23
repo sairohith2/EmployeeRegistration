@@ -23,7 +23,8 @@
 
     <button *ngIf="!openedFromDialog" (click)="fillTimesheet()">Fill Timesheet</button>
 
-    <!-- <button (click)="fillTimesheet()">Fill Timesheet</button> -->
+    <button *ngIf="openedFromDialog" class="folder-icon" title="Upload Files" (click)="documentsUpload()"><i class="material-icons">folder</i></button>
+
   </div>
   
 </div>

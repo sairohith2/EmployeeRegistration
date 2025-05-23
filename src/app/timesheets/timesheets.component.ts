@@ -10,6 +10,9 @@ import { Router } from '@angular/router';
 })
 export class TimesheetsComponent {
 
+
+showHolidayPopup = false;
+  
  private gridApi!: GridApi<any>;
   empData : any [] = [];
   defaultColDef ={
@@ -53,5 +56,13 @@ paginationPageSizeSelector: number[] | boolean = [10, 20, 30,50];
       this.gridApi =  event.api;
   }
 
+  upcomingHolidays = [
+  { date: new Date('2025-05-20'), name: 'Summer Holidays' },
+  { date: new Date('2025-06-02'), name: 'Company Annual Day' },
+  { date: new Date('2025-06-14'), name: 'School Repoms'}
+];
 
+toggleHolidayPopup() {
+  this.showHolidayPopup = !this.showHolidayPopup;
+}
 }
