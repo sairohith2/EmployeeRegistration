@@ -162,28 +162,6 @@
       "status": "Inactive"
     },
     {
-      "id": "1a46",
-      "firstname": "John",
-      "lastname": "Smith",
-      "email": "Johnsmith@gmail.com",
-      "dob": "1998-07-08",
-      "username": "johsmi1998",
-      "gender": "male",
-      "dateOfJoining": "2008-12-08",
-      "experienceYears": 4,
-      "backgroundExp": "Other",
-      "otherBackground": "Data Science ",
-      "address": {
-        "street": "Main Road",
-        "phone": "2341232311",
-        "country": "USA",
-        "city": "Kent",
-        "postal": 22341
-      },
-      "status": "Inactive",
-      "role": "Employee"
-    },
-    {
       "id": "3cbd",
       "firstname": "Joy",
       "lastname": "smith",
@@ -889,15 +867,6 @@
       "returned": "NO"
     },
     {
-      "id": "0ef2",
-      "assetName": "Samsung s23",
-      "assetType": "Office Phone",
-      "serialNumber": "3290#78YG45",
-      "employee": "Final  test",
-      "issuedDate": "2025-09-03",
-      "returned": "NO"
-    },
-    {
       "id": "cae6",
       "assetName": "Laptop Acer",
       "assetType": "Laptop",
@@ -943,15 +912,6 @@
       "returned": "No"
     },
     {
-      "id": "8ddb",
-      "assetName": "Monitor",
-      "assetType": "Monitor",
-      "serialNumber": "23EDL90H4",
-      "employee": "mahesh babu",
-      "issuedDate": "2025-02-03",
-      "returned": "No"
-    },
-    {
       "id": "0c0f",
       "assetName": "Access Card",
       "assetType": "Access Card",
@@ -961,21 +921,30 @@
       "returned": "No"
     },
     {
-      "id": "259b",
-      "assetName": "Laptop",
-      "assetType": "Laptop",
-      "serialNumber": "230000JKOP",
-      "employee": "Joy smith",
-      "issuedDate": "2025-03-04",
-      "returned": "No"
-    },
-    {
       "id": "972d",
       "assetName": "Access Card",
       "assetType": "Access Card",
       "serialNumber": "390234EWOW90",
       "employee": "bunny smith",
-      "issuedDate": "2025-03-02"
+      "issuedDate": "2025-03-02",
+      "returned": "No"
+    },
+    {
+      "id": "385b",
+      "assetName": "Access Card",
+      "assetType": "Access Card",
+      "serialNumber": "342",
+      "employee": "mahesh babu",
+      "issuedDate": "2025-02-03",
+      "returned": "No"
+    },
+    {
+      "id": "dde7",
+      "assetName": "aces",
+      "assetType": "Access Card",
+      "serialNumber": "",
+      "employee": "bunny smith",
+      "issuedDate": "92003-09-09"
     }
   ],
   "returnedAssets": [
@@ -988,6 +957,46 @@
       "issuedDate": "2025-03-01",
       "returned": "Yes",
       "returnedDate": "2025-02-03"
+    },
+    {
+      "id": "259b",
+      "assetName": "Laptop",
+      "assetType": "Laptop",
+      "serialNumber": "230000JKOP",
+      "employee": "Joy smith",
+      "issuedDate": "2025-03-04",
+      "returned": "Yes",
+      "returnedDate": "2025-03-04"
+    },
+    {
+      "id": "8ddb",
+      "assetName": "Monitor",
+      "assetType": "Monitor",
+      "serialNumber": "23EDL90H4",
+      "employee": "mahesh babu",
+      "issuedDate": "2025-02-03",
+      "returned": "Yes",
+      "returnedDate": "2025-01-01"
+    },
+    {
+      "id": "efae",
+      "assetName": "Access Card",
+      "assetType": "Access Card",
+      "serialNumber": "290",
+      "employee": "Final  test",
+      "issuedDate": "2025-03-02",
+      "returned": "Yes",
+      "returnedDate": "2025-05-23"
+    },
+    {
+      "id": "0ef2",
+      "assetName": "Samsung s23",
+      "assetType": "Office Phone",
+      "serialNumber": "3290#78YG45",
+      "employee": "Final  test",
+      "issuedDate": "2025-09-03",
+      "returned": "Yes",
+      "returnedDate": "8009-09-09"
     }
   ]
 }

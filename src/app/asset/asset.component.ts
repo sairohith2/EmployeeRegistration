@@ -7,6 +7,7 @@ import { FormService } from '../form.service';
 import { filter } from 'rxjs';
 import { CellRendererComponent } from 'ag-grid-community/dist/types/core/components/framework/componentTypes';
 import { ReturnedAssetComponent } from '../returned-asset/returned-asset.component';
+import { ReturnedAssetsListComponent } from '../returned-assets-list/returned-assets-list.component';
 
 
 @Component({
@@ -155,7 +156,11 @@ export class AssetComponent {
   }
 
   returnedAssets(){
-    
+    console.log("Button Clicked Returend Assets");
+   this.dialog.open(ReturnedAssetsListComponent,{
+    width:'900px',
+    height:'600px'
+   });
   }
 
 }

@@ -103,5 +103,9 @@ export class FormService {
   submitReturnAssets(data:any){
       return this.http.post(this.returnAssetsUrl, data);
   }
+
+  getReturnedAssetsList(): Observable<any[]> {
+    return this.http.get<any>(this.returnAssetsUrl);
+  }
 }
 

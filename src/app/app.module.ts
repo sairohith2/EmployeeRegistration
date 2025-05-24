@@ -36,6 +36,7 @@ import { EmployeeFileUploadDialogComponent } from './employee-file-upload-dialog
 import { AssetComponent } from './asset/asset.component';
 import { AssetformdialogComponent } from './assetformdialog/assetformdialog.component';
 import { ReturnedAssetComponent } from './returned-asset/returned-asset.component';
+import { ReturnedAssetsListComponent } from './returned-assets-list/returned-assets-list.component';
 
 
 
@@ -56,6 +57,7 @@ import { ReturnedAssetComponent } from './returned-asset/returned-asset.componen
     AssetComponent,
     AssetformdialogComponent,
     ReturnedAssetComponent,
+    ReturnedAssetsListComponent,
   ],
   imports: [
     BrowserModule,
