@@ -854,6 +854,13 @@
       "type": "image/png",
       "employeeId": "5de3",
       "employeeName": "Tharun "
+    },
+    {
+      "id": "305b",
+      "fileName": "Catalogue - Hidani Tech .pdf",
+      "type": "application/pdf",
+      "employeeId": "0093",
+      "employeeName": "bunny"
     }
   ],
   "assetEmps": [
@@ -942,9 +949,10 @@
       "id": "dde7",
       "assetName": "aces",
       "assetType": "Access Card",
-      "serialNumber": "",
+      "serialNumber": "4839",
       "employee": "bunny smith",
-      "issuedDate": "92003-09-09"
+      "issuedDate": "2005-09-09",
+      "returned": "No"
     }
   ],
   "returnedAssets": [

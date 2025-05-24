@@ -7,4 +7,24 @@
   .full-width {
     width: 100%;
   }
-  
+  /* loginregister.component.css */
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('/assets/bg4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.auth-card {
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+}

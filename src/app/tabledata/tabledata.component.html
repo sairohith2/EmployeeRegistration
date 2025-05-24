@@ -1,31 +1,26 @@
-<div class="status-filter">
-  <label for="statusSelect">Filter by Status:</label>
-  <select id="statusSelect" [(ngModel)]="selectedStatus" (change)="onStatusFilterChange()">
-    <option value="">All</option>
-    <option value="active">Active</option>
-    <option value="inactive">Inactive</option>
-  </select>
-</div>
+<div class="filter-container">
+  <div class="status-filter">
+    <label for="statusSelect">Filter by Status:</label>
+    <select id="statusSelect" [(ngModel)]="selectedStatus" (change)="onStatusFilterChange()">
+      <option value="">All</option>
+      <option value="active">Active</option>
+      <option value="inactive">Inactive</option>
+    </select>
+  </div>
 
-<div class="status-filter">
-  <label for="statusSelect">Filter By Role:</label>
-  <select id="roleSelect" [(ngModel)]="selectedRole" (change)="onRoleFilterChange()">
-    <option value="">All</option>
-    <option value="manager">Manager</option>
-    <option value="employee">Employee</option>
-  </select>
-</div>
+  <div class="status-filter">
+    <label for="roleSelect">Filter By Role:</label>
+    <select id="roleSelect" [(ngModel)]="selectedRole" (change)="onRoleFilterChange()">
+      <option value="">All</option>
+      <option value="manager">Manager</option>
+      <option value="employee">Employee</option>
+    </select>
+  </div>
 
-<div class="search-bar">
-  <label for="searchInput">Search:</label>
-  <input
-    id="searchInput"
-    type="text"
-    placeholder="Type to search..."
-    [(ngModel)]="searchText"
-    (input)="onSearchTextChange()"
-    class="search-input"
-  />
+  <div class="search-box">
+    <label for="searchInput">Search:</label>
+    <input id="searchInput" type="text" placeholder="Enter Employee First Name" [(ngModel)]="searchText">
+  </div>
 </div>
 
 
@@ -42,7 +37,7 @@
     <button (click)="onRemoveSelected()">Remove Selected</button>
     <button (click)="saveDetails()">Save</button>
     <button (click)="exportToCSV()">Export to CSV</button>
-  </div>a
+  </div>
 </div>
 
 <div *ngIf="showSaveMessage" class="save-toast">

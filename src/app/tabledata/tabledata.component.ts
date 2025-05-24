@@ -227,12 +227,12 @@ export class TabledataComponent {
         filter: searchText
       } : null
     });
-    this.gridApi.setFilterModel({
-      lastname: searchText? {
-        type: 'contains',
-        filter: searchText
-      }: null
-    })
+    // this.gridApi.setFilterModel({
+    //   lastname: searchText? {
+    //     type: 'contains',
+    //     filter: searchText
+    //   }: null
+    // })
   }
   
   onFileUpload(event: any): void {
