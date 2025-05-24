@@ -87,7 +87,7 @@ export class DashboardComponent {
 
   logout() {
     localStorage.removeItem('user');
-    this.router.navigate(['/']);
+    this.router.navigate(['/login']);
     alert('Logout successful');
   }
 }

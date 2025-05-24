@@ -9,6 +9,7 @@ import { TimesheetsComponent } from './app/timesheets/timesheets.component';
 import { EmployeeDetailsComponent } from './app/employee-details/employee-details.component';
 import { DocumentsUploadComponent } from './app/documents-upload/documents-upload.component';
 import { AssetComponent } from './app/asset/asset.component';
+import { AuthGuard } from './app/auth.guard';
 
 
 // const routes: Routes = [
@@ -26,6 +27,7 @@ const routes: Routes = [
   {
     path: '',
     component: LayoutComponent, 
+    canActivate: [AuthGuard],
     children: [
       {path: 'home', component: DashboardComponent},
       { path: 'dashboard', component: DashboardComponent },
