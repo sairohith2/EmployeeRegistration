@@ -9,7 +9,7 @@ export class LoginService {
 
  constructor(private http: HttpClient) { }
 
- private apiUrl = 'http://localhost:3000/users';
+ private apiUrl = 'https://node-server-iota-three.vercel.app/users';
 
   registerUser(data: any): Observable<any> {
     return this.http.post(this.apiUrl, data);

@@ -8,15 +8,15 @@ import { Timesheet, TimesheetEntry } from './timesheet';
 })
 export class FormService {
 
-  private apiUrl = 'http://localhost:3000/submissions';
+  private apiUrl = 'https://node-server-iota-three.vercel.app/submissions';
 
-  private baseUrl = 'http://localhost:3000';
+  private baseUrl = 'https://node-server-iota-three.vercel.app';
 
-  private filesUrl = 'http://localhost:3000/filesUploaded';
+  private filesUrl = 'https://node-server-iota-three.vercel.app/filesUploaded';
 
-  private assetUrl =  'http://localhost:3000/assetEmps';
+  private assetUrl =  'https://node-server-iota-three.vercel.app/assetEmps';
 
-  private returnAssetsUrl = 'http://localhost:3000/returnedAssets'
+  private returnAssetsUrl = 'https://node-server-iota-three.vercel.app/returnedAssets'
 
   constructor(private http: HttpClient) { }
 
