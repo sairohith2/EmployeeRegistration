@@ -16,6 +16,7 @@ export class TimesheetEntryDialogComponent implements OnInit {
 
   timesheetId: number | null = null;
   timesheetData: any[] = [];
+  
   hourlyRate = 0;
 
   startDate: Date = new Date();
