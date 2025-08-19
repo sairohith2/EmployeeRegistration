@@ -38,6 +38,7 @@ import { AssetformdialogComponent } from './assetformdialog/assetformdialog.comp
 import { ReturnedAssetComponent } from './returned-asset/returned-asset.component';
 import { ReturnedAssetsListComponent } from './returned-assets-list/returned-assets-list.component';
 import { GitpractiseComponent } from './gitpractise/gitpractise.component';
+import { SessionComponent } from './session/session.component';
 
 
 
@@ -60,6 +61,7 @@ import { GitpractiseComponent } from './gitpractise/gitpractise.component';
     ReturnedAssetComponent,
     ReturnedAssetsListComponent,
     GitpractiseComponent,
+    SessionComponent,
   ],
   imports: [
     BrowserModule,
