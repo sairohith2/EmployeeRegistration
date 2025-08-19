@@ -38,9 +38,6 @@ import { AssetformdialogComponent } from './assetformdialog/assetformdialog.comp
 import { ReturnedAssetComponent } from './returned-asset/returned-asset.component';
 import { ReturnedAssetsListComponent } from './returned-assets-list/returned-assets-list.component';
 import { GitpractiseComponent } from './gitpractise/gitpractise.component';
-import { SessionComponent } from './session/session.component';
-
-
 
 @NgModule({
   declarations: [
@@ -60,8 +57,7 @@ import { SessionComponent } from './session/session.component';
     AssetformdialogComponent,
     ReturnedAssetComponent,
     ReturnedAssetsListComponent,
-    GitpractiseComponent,
-    SessionComponent,
+    GitpractiseComponent
   ],
   imports: [
     BrowserModule,
